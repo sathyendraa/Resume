@@ -1,0 +1,1029 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+}
+.image {
+    position: relative;
+    width: 400px;
+}
+
+.image__img {
+    display: block;
+    width: 1341px;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1341px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    color: #45505b;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.image__title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 15px;
+  overflow-y: auto;
+}
+
+@media (max-width: 992px) {
+  #header {
+    width: 300px;
+    background: #fff;
+    border-right: 1px solid #e6e9ec;
+    left: -300px;
+  }
+}
+
+@media (min-width: 992px) {
+  #main {
+    margin-left: 100px;
+  }
+}
+.nav-menu {
+  padding: 0;
+  display: block;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu a, .nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #45505b;
+  padding: 10px 18px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+  border-radius: 50px;
+  background: #f2f3f5;
+  height: 56px;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.nav-menu a i, .nav-menu a:focus i {
+  font-size: 20px;
+}
+
+.nav-menu a span, .nav-menu a:focus span {
+  padding: 0 5px 0 7px;
+  color: #45505b;
+}
+
+@media (min-width: 992px) {
+  .nav-menu a, .nav-menu a:focus {
+    width: 56px;
+  }
+  .nav-menu a span, .nav-menu a:focus span {
+    display: none;
+    color: #fff;
+  }
+}
+
+.nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover > a {
+  color: #fff;
+  background: #0563bb;
+}
+
+.nav-menu a:hover span, .nav-menu .active span, .nav-menu .active:focus span, .nav-menu li:hover > a span {
+  color: #fff;
+}
+
+.nav-menu a:hover, .nav-menu li:hover > a {
+  width: 100%;
+  color: #fff;
+}
+
+.nav-menu a:hover span, .nav-menu li:hover > a span {
+  display: block;
+}
+
+
+
+a {
+    color: #0563bb;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #067ded;
+    text-decoration: none;
+  }
+
+  #hero {
+
+    width: 100%;
+    height: 100vh;
+     background: url("https://bootstrapmade.com/demo/templates/MyResume/assets/img/hero-bg.jpg") top right no-repeat;
+    background-size: cover; 
+    position: relative;
+  }
+  
+  @media (min-width: 992px) {
+    #hero {
+      padding-left: 160px;
+    }
+  }
+  
+  #hero:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero h1 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #45505b; 
+  }
+  
+  #hero p {
+    color: #45505b;
+    margin: 15px 0 0 0;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif; 
+   
+  }
+  
+  #hero p span {
+    color: #0563bb;
+    letter-spacing: 1px; 
+  }
+
+  
+  @media (max-width: 992px) {
+    #hero {
+      text-align: center;
+    }
+    #hero h1 {
+      font-size: 32px;
+      line-height: 36px;
+    }
+    #hero p {
+      margin-top: 10px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  
+  .containerone {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .containerone img {vertical-align: middle;}
+  .containerone .contentone {
+    position: absolute;
+    bottom: 0;
+    margin:85px;
+    margin-left: -125px;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0); 
+    color: #f1f1f1;
+    width: 100%;
+    padding: 152px;
+  }
+  .containerone .contentone p{
+      margin-top:-10px;
+      margin-left:150px;
+      font-weight: 7000;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 56px;
+      color: #45505b;
+      font-family: "Open Sans", sans-serif;
+}
+
+#footer{
+    background: #f7f8f9;
+    color: #45505b;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+#footer h3 {
+    font-size: 36px;
+    font-weight: 750;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+ 
+
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #45505b;
+  }
+  
+  
+  .section-title p {
+    margin-bottom: 0;
+  }
+  
+  
+
+  .about .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #728394;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about .content ul strong {
+    margin-right: 10px;
+  }
+  
+  .about .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #0563bb;
+    line-height: 0;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .facts .count-box {
+    padding: 30px 30px 25px 30px;
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .facts .count-box i {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    background: #0563bb;
+    color: #fff;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .facts .count-box span {
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+    color: #011426;
+  }
+  
+  .facts .count-box p {
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+  }
+  
+  
+
+  .skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+  }
+  
+  .skills .progress .skill {
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #45505b;
+  }
+  
+  .skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: .9s;
+    background-color: #0563bb;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #0563bb;
+    position: relative;
+  }
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: #f7f8f9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio #portfolio-flters {
+    padding: 0;
+    margin: 0 auto 25px auto;
+    list-style: none;
+    text-align: center;
+    background: #fff;
+    border-radius: 50px;
+    padding: 2px 15px;
+  }
+  .portfolio .container1 {
+    position: relative;
+    width: 100%;
+  }
+  .portfolio .container2 {
+    position: relative;
+    width: 100%;
+  }
+  .portfolio .container3 {
+    position: relative;
+    width: 100%;
+  }
+  .portfolio .container4 {
+    position: relative;
+    width: 100%;
+  }
+  .portfolio .container5 {
+    position: relative;
+    width: 100%;
+  }
+  .portfolio .container6 {
+    position: relative;
+    width: 100%;
+  }
+  .portfolio .container7 {
+    position: relative;
+    width: 100%;
+  }
+  .portfolio .container8 {
+    position: relative;
+    width: 100%;
+  }
+  .portfolio .container9 {
+    position: relative;
+    width: 100%;
+  }
+  .portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #272829;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #eaeef0;
+    overflow: hidden;
+  }
+  .text {
+  
+    font-family: "Raleway", sans-serif;
+    color: #45505b;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text1 {
+    color:  #45505b;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container1 .overlay:hover {
+    opacity: 0.8;
+  }
+  .container2 .overlay:hover {
+    opacity: 0.8;
+  }
+  .container3 .overlay:hover {
+    opacity: 0.8;
+  }
+  .container4 .overlay:hover {
+    opacity: 0.8;
+  }
+  .container5 .overlay:hover{
+    opacity: 0.8;
+  }
+  .container6 .overlay:hover {
+    opacity: 0.8;
+  }
+  .container7 .overlay:hover {
+    opacity: 0.8;
+  }
+  .container8 .overlay:hover {
+    opacity: 0.8;
+  }
+  .container9 .overlay:hover {
+    opacity: 0.8;
+  }
+  
+ 
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;;
+    min-height: 100vh;
+    }
+    .heading,
+    .container1 {
+    
+    display: flex;
+    
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    }
+    
+    .heading h3
+    {
+      font-family: "Raleway", sans-serif;
+      font-size=30px;
+    }
+    .container1 .content
+    {
+        font-family: "Raleway", sans-serif;
+        font-size: 14px;
+        color:#45505b;
+    }
+    .container1 .box1 {
+    position: relative;
+    width: 350px; I
+    padding: 40px;
+    background:#fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    }
+    
+    .container1 .box2 {
+        position: relative;
+         width: 350px; I
+         padding: 40px;
+         background:#fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin: 20px;
+        text-align: center;
+        box-sizing: border-box;
+        
+        }
+        .container1 .box3 {
+            position: relative;
+             width: 350px; I
+             padding: 40px;
+             background:#fff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            margin: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            
+            }
+            .container1 .box4 {
+                position: relative;
+                width: 350px; I
+                padding: 40px;
+                background:#fff;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                margin: 20px;
+                text-align: center;
+                box-sizing: border-box;
+                }
+                .container1 .box5 {
+                    position: relative;
+                    width: 350px; I
+                    padding: 40px;
+                    background:#fff;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                    border-radius: 5px;
+                    margin: 20px;
+                    text-align: center;
+                    box-sizing: border-box;
+                    }
+                    .container1 .box6 {
+                        position: relative;
+                        width: 350px; I
+                        padding: 40px;
+                        background:#fff;
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                        border-radius: 5px;
+                        margin: 20px;
+                        text-align: center;
+                        box-sizing: border-box;
+                        }
+            .container1 .box1 .number1{
+                position: relative;
+                width: 80px;
+                height: 80px;
+                color:#47aeff;
+                background:#f5f5f5;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                border-radius: 50%;
+                font-size: 40px;
+                font-weight: 700;
+                transition: 1s;
+                }
+                .container1 .box1 .number1:hover { 
+                  background:#47aeff;
+                  color:white;
+                }
+    
+    
+        .container1 .box2 .number2{
+            position: relative;
+            width: 80px;
+            height: 80px;
+            color:#ffa76e;
+            background:#f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            border-radius: 50%;
+            font-size: 40px;
+            font-weight: 700;
+            transition: 1s;
+            }
+            .container1 .box2 .number2:hover { 
+              background:#ffa76e;
+              color:white;
+            }
+    
+    
+                .container1 .box3 .number3{
+                    position: relative;
+                    width: 80px;
+                    height: 80px;
+                    color:#e80368;
+                    background:#f5f5f5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 auto;
+                    border-radius: 50%;
+                    font-size: 40px;
+                    font-weight: 700;
+                    transition: 1s;
+                    }
+                    .container1 .box3 .number3:hover { 
+                      background:#e80368;
+                      color:white;
+                    }
+    
+                    .container1 .box4 .number4{
+                        position: relative;
+                        width: 80px;
+                        height: 80px;
+                        color:#ffbb2c;
+                        background:#f5f5f5;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto;
+                        border-radius: 50%;
+                        font-size: 40px;
+                        font-weight: 700;
+                        transition: 1s;
+                        }
+                        .container1 .box4 .number4:hover { 
+                          background:#ffbb2c;
+                          color:white;
+                        }
+                        .container1 .box5 .number5{
+                            position: relative;
+                            width: 80px;
+                            height: 80px;
+                            color:#ff5828;
+                            background:#f5f5f5;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 0 auto;
+                            border-radius: 50%;
+                            font-size: 40px;
+                            font-weight: 700;
+                            transition: 1s;
+                            }
+                            .container1 .box5 .number5:hover { 
+                              background:#ff5828;
+                              color:white;
+                            }
+                            .container1 .box6 .number6{
+                                position: relative;
+                                width: 80px;
+                                height: 80px;
+                                color:#11dbcf;
+                                background:#f5f5f5;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin: 0 auto;
+                                border-radius: 50%;
+                                font-size: 40px;
+                                font-weight: 700;
+                                transition: 1s;
+                                }
+                                .container1 .box6 .number6:hover { 
+                                  background:#11dbcf;
+                                  color:white;
+                                }
+
+
+                               .contact{
+                                  background: white;
+                                          }
+                                                                      
+                                          .contact form .form-group1 {
+                                            left: 2px;
+                                            bottom: 8px;
+                                        }         
+                                                                      .contact .contact-title h2{
+                                                                        font-size: 20px;
+                                                                          font-weight: 500;
+                                                                          padding-top: 10px;
+                                                                          line-height: 1px;
+                                                                          margin: 0 0 5px 0;
+                                                                          letter-spacing: 2px;
+                                                                          text-transform: uppercase;
+                                                                          color: rgb(170 170 170);
+                                                                          font-family: "Poppins", sans-serif;
+                                                                          padding-left: 5%;
+                                                                          padding-top: 5%;
+                                                                      }
+                                                                      .contact-title p{
+                                                                        color:rgb(205 164 94); 
+                                                                        font-size: 30px;
+                                                                        padding-bottom: 3%;
+                                                                        padding-left: 5%;
+                                                                      }
+                                                                      .contact .info {
+                                                                        width: 100%;
+                                                                      }
+                                                                      
+                                                                      .contact .info i {
+                                                                        font-size: 20px;
+                                                                        float: left;
+                                                                        width: 44px;
+                                                                        height: 44px;
+                                                                        background: #eef7ff;;
+                                                                        display: flex;
+                                                                        justify-content: center;
+                                                                        align-items: center;
+                                                                        border-radius: 50px;
+                                                                        transition: all 0.3s ease-in-out;
+                                                                      }
+                                                                      
+                                                                      .contact .info h4 {
+                                                                        padding: 0 0 0 60px;
+                                                                        font-size: 22px;
+                                                                        font-weight: 600;
+                                                                        margin-bottom: 5px;
+                                                                        font-family: "Raleway", sans-serif;
+                                                                        color: #45505b;
+                                                                      }
+                                                                      
+                                                                      .contact .info p {
+                                                                        padding: 0 0 0 60px;
+                                                                        margin-bottom:20px;
+                                                                        font-size: 14px;
+                                                                        color: #728394;
+                                                                        margin-top: -6px;
+                                                                      }
+                                                                      
+                                                                      .contact .info .working-time, .contact .info .email, .contact .info .phone {
+                                                                        margin-top: 40px;
+                                                                      }
+                                                                      
+                                                                      .contact .info .address .bi.bi-geo-alt{
+                                                                        color: #0563bb;
+                                                                        background: #fff;
+                                                                      }
+                                                                      
+                                                                      .contact .info .address .bi.bi-geo-alt:hover{
+                                                                        color: #fff;
+                                                                        background: #0563bb;
+                                                                      }
+                                                                      
+                                                                      .contact .info .envelope .bi.bi-envelope{
+                                                                        color: #0563bb;
+                                                                        background: #fff;
+                                                                      }
+                                                                      
+                                                                      .contact .info .envelope .bi.bi-envelope:hover{
+                                                                        color: #fff;
+                                                                        background: #0563bb;
+                                                                      }
+                                                                      .contact .info .phone .bi.bi-phone{
+                                                                      
+                                                                        color: #0563bb;
+                                                                        background: #fff;
+                                                                      }
+                                                                      
+                                                                      .contact .info .phone .bi.bi-phone:hover{
+                                                                      
+                                                                        color: #fff;
+                                                                        background: #0563bb;
+                                                                      }
+                                                                      
+                                                                      .contact input {
+                                                                        height: 44px;
+                                                                        width: 250px;
+                                                                      }
+                                                                      
+                                                                      .contact textarea {
+                                                                        padding: 10px 12px;
+                                                                      }
+                                                                      
+                                                                      .contact button[type="submit"] {
+                                                                        background: #0563bb;
+                                                                        border: 0;
+                                                                        padding: 10px 35px;
+                                                                        color: #fff;
+                                                                        border-radius: 50px;
+                                                                      }
+                                                                      
+                                                                      .contact button[type="submit"]:hover {
+                                                                        opacity:0.8;
+                                                                      }
+                                                                      
+                                                                      .contact form #name,.contact form #email,.contact form #subject,.contact textarea{
+                                                                        padding-left: 5px;
+                                                                      }
+                                                                      .contact form #subject[type="text"]{
+                                                                        width: 570px;
+                                                                      }
+                                                                      .contact form .form-group1{
+                                                                        left: -13px;
+                                                                        bottom: 8px;
+                                                                      }
+                                                                      .contact form input[type="text"],.contact form input[type="email"],.contact textarea{
+                                                                        border-color:grey;
+                                                                        border: 1px solid;
+                                                                      }
+                                                                      .contact textarea{
+                                                                        width: 570px;
+                                                                      }
+
+
+                                @import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+                                @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+                                *, *:before, *:after {
+                                  box-sizing: border-box;
+                                }
+                                
+                                html, body {
+                                  height: 100%;
+                                }
+                                
+                                body {
+                                  color: #444;
+                                  font-family: 'Roboto', sans-serif;
+                                  font-size: 1rem;
+                                  line-height: 1.5;
+                                }
+                                
+                                .slider {
+                                  height: 600px;
+                                  position: relative;
+                                  overflow: hidden;
+                                  display: -webkit-box;
+                                  display: -webkit-flex;
+                                  display: -ms-flexbox;
+                                  display: flex;
+                                  -webkit-flex-flow: row nowrap;
+                                      -ms-flex-flow: row nowrap;
+                                          flex-flow: row nowrap;
+                                  -webkit-box-align: end;
+                                  -webkit-align-items: flex-end;
+                                      -ms-flex-align: end;
+                                          align-items: flex-end;
+                                  -webkit-box-pack: center;
+                                  -webkit-justify-content: center;
+                                      -ms-flex-pack: center;
+                                          justify-content: center;
+                                }
+                                
+                                .slider__nav {
+                                    width: 14px;
+                                    height: 12px;
+                                    margin: 11rem 12px;
+                                    z-index: 10;
+                                    block-size: 20px;
+                                    cursor: pointer;
+                                
+  
+                                }
+                                .slider__nav:checked {
+                                  -webkit-animation: check 0.4s linear forwards;
+                                          animation: check 0.4s linear forwards;
+                                }
+                                .slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+                                  left: 5%;
+                                }
+                                .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+                                  left: -74%;
+                                }
+                                .slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+                                  left: -152%;
+                                }
+                                .slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+                                  left: -228%;
+                                }
+                                .slider__nav:checked:nth-of-type(5) ~ .slider__inner {
+                                    left: -303%;
+                                  }
+                                .slider__inner {
+                                  position: absolute;
+                                  margin-top:0px;
+                                  margin-bottom: 0px;
+                                  top: 0;
+                                  left: 0;
+                                  width: 400%;
+                                  height: 100%;
+                                  -webkit-transition: left 0.4s;
+                                  transition: left 0.4s;
+                                  display: -webkit-box;
+                                  display: -webkit-flex;
+                                  display: -ms-flexbox;
+                                  display: flex;
+                                  -webkit-flex-flow: row nowrap;
+                                      -ms-flex-flow: row nowrap;
+                                          flex-flow: row nowrap;
+                                }
+                                
+                                
+                                
+                                .slider__contents {
+                                  height: 60%;
+                                  box-sizing: border-box;
+                                  margin-top:0px;
+                                  margin-bottom: 0px;
+                                  padding: 2rem;
+                                  text-align: center;
+                                  display: -webkit-box;
+                                  display: -webkit-flex;
+                                  display: -ms-flexbox;
+                                  display: flex;
+                                  -webkit-box-flex: 1;
+                                  -webkit-flex: 1;
+                                      -ms-flex: 1;
+                                          flex: 1;
+                                  -webkit-flex-flow: column nowrap;
+                                      -ms-flex-flow: column nowrap;
+                                          flex-flow: column nowrap;
+                                  -webkit-box-align: center;
+                                  -webkit-align-items: center;
+                                      -ms-flex-align: center;
+                                          align-items: center;
+                                  -webkit-box-pack: center;
+                                  -webkit-justify-content: center;
+                                      -ms-flex-pack: center;
+                                          justify-content: center;
+                                }
+                                .slider__image {
+                                  font-size: 2.7rem;
+                                      color: #2196F3;
+                                }
+                                .slider__caption {
+                                  font-weight: 500;
+                                  margin-top:0px;
+                                  margin-bottom: 0px;
+                                  margin: 2rem 0 1rem;
+                                  color:#111;
+                                  
+                                }
+                                .slider__txt {
+                                  color: #272829;
+                                  margin-top: 0;
+                                  margin-bottom: 0;
+                                 
+                                  max-width: 300px;
+                                  font-style: italic;
+                                font-family: "Open Sans", sans-serif;
+                                }
+                                .slider__words{
+                                    margin-top:-15px;
+                                    margin-bottom:25px;
+                                    color:#999;
+
+
+                                
+        
+                                    
